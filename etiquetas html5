@@ -1,0 +1,125 @@
+HTML5
+=====
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<script src="control.js"></script>
+<link href="stylo.css" rel="stylesheet" type="text/css">
+<title>facturacion </title>
+</head>
+ 
+<body>
+ 
+<style type="text/css">
+body{
+background-image: url('imagenes/fondo.jpg');
+background-repeat: no-repeat;
+background-size: 100%;
+}
+</style>
+<center><h1 id="Titulo"> Sistema de Facturacion  Yino Sports </h1></center>
+<nav><center> <br> </br>
+ 
+ 
+<td><center><img id="imagen" src="imagenes/yino.jpg"  width="150"  height="150"   ></center></td>
+ 
+<center>
+<table border="1px">
+ 
+<tr><td>Id Cliente</td>   
+<td><input type="text"></td></tr>                                
+ 
+<tr><td>Nombre Cliente</td>                          
+<td><input type="text"></td></tr>
+ 
+<tr><td>Direccion</td> 
+<td><input type="text"></td></tr>  
+                           
+<br><tr><td>Telefono</td>  
+<td><input type="text"></td></tr>  
+ 
+ 
+ 
+ 
+<tr>
+  <td><center>Codigo</center></td>
+	<td><center>Descripcion</center></td>
+	<td><center>Valor unitario</center></td>
+	<td><center>Cantidad</center></td>
+	<td><center>Subtotal</center></td>
+ 
+</tr>
+ 
+ 
+<tr>
+	<td> <input type="text"> </td>
+	<td> <input type="text"> </td>
+	<td> <input type="text" id="val1" onChange="calcular(val1.value, cant1.value, sub1.id)"></td>
+	<td> <input type="text" id="cant1" onChange="calcular(val1.value, cant1.value, sub1.id)"></td>
+	<td> <input type="text" id="sub1" value=""></td>
+</tr>
+ 
+<tr>
+	<td> <input type="text"> </td>
+	<td> <input type="text"> </td>
+	<td> <input type="text" id="val2" onChange="calcular(val2.value, cant2.value, sub2.id)"></td>
+	<td> <input type="text" id="cant2"  onChange="calcular(val2.value, cant2.value, sub2.id)"></td>
+	<td> <input type="text" id="sub2" value=""></td>
+</tr>
+ 
+<tr>
+	<td> <input type="text"> </td>
+	<td> <input type="text"> </td>
+	<td> <input type="text" id="val3"  onChange="calcular(val3.value, cant3.value, sub3.id)"></td>
+	<td> <input type="text" id="cant3" onChange="calcular(val3.value, cant3.value, sub3.id)"></td>
+	<td> <input type="text" id="sub3" value=""></td>
+</tr>
+ 
+<tr>
+	<td> <input type="text"> </td>
+	<td> <input type="text"> </td>
+	<td> <input type="text" id="val4" onChange="calcular(val4.value, cant4.value, sub4.id)"> </td>
+	<td> <input type="text" id="cant4" onChange="calcular(val4.value, cant4.value, sub4.id)"> </td>
+	<td> <input type="text" id="sub4" value=""></td>
+</tr>
+ 
+<tr>
+	<td> <input type="text"> </td>
+	<td> <input type="text"> </td>
+	<td> <input type="text" id="val5" onChange="calcular(val5.value, cant5.value, sub5.id)"> </td>
+	<td> <input type="text" id="cant5" onChange="calcular(val5.value, cant5.value, sub5.id)"> </td>
+	<td> <input type="text" id="sub5" value=""></td>
+ 
+</tr>
+ 
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><center>Subtotal</center> </td>
+	<td> <input type="text" id="cajasubtotal"></td>
+</tr>
+ 
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><center>Iva 12 %</center></td>
+	<td> <input type="text" id="cajaiva"></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><center>Total</center></td>
+	<td> <input type="text" id="Catotal"></td>
+</tr>
+</table>
+ 
+ 
+</body>
+ 
+</html>
+ 
+<br><button onClick="Factura()">Calcular Factura </button> </br>
+</rigth>
